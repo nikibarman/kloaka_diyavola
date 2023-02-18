@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title> Наш проектус и еще один сайт на ворд пресс</title>
+ <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div id="logo" onclick="slowScroll('#top')">
+			<span>ПрактиКод</span>
+		</div>
+		<div id="about">
+			<a href="#" title="Задания" onclick="slowScroll('#main')">Задания</a>
+			<a href="#" title="Рейтинг" onclick="slowScroll('#main')">Рейтинг</a>
+			<a href="#" title="О нас" onclick="slowScroll('#main')">О нас</a>
+			<a href="#" title="Личный кабинет" onclick="slowScroll('#main')">Личный кабинет</a>
+		</div>
+	</header>
+	<div id="top">
+		<h1> Наш сайт поможет</h1>
+		<h3> обучиться основам программирования</h3>
+	</div>
+	<div id="main">
+		<div class="intro">
+			<h2>Здесь вы сможете выполнять различные задачи</h2>
+			<span>которые могут дать вам общее представление о программировании</span>
+		</div>
+		<div class="text">
+			<span>А также словить кринж ведь мы и сами не умеем кодить. Ну хоть вы научитесь. Желаю удачи
+			и тптптп итппиадм выдвыдтвыв ыдоавыдадыад лылаоыддт выдаоаывл жллывВЫпа павррррррр аааааааа аааааааа
+ 			</span>
+		</div>
+		
+	</div>
+	<div id="overview">
+		<h2> А еще тыры пыры</h2>
+		<h4>Трали вали, ебать стих конечно</h4>
+		
+		<div class="img">
+			<img src="https://cdn.education-wiki.com/img/python-tutorials/8024375/python-compilers.jpg.webp" alt="">
+			<span> Задания по Python</span>
+		</div>
+		<div class="img">
+			<img src="https://contact.cn.ua/wp-content/uploads/2020/08/main_1533289795975-11-1170x650.jpg" alt="">
+			<span> Задания по с++</span>
+		</div>
+		<div class="img">
+			<img src="https://static10.tgstat.ru/channels/_0/c6/c6a5847a4c75c20415344aa0ad7807b0.jpg" alt="">
+			<span> Задания по java</span>
+		</div>
+	</div>
+	<div id="contacts">
+		<center><h5>Обратная связь</h5></center>
+		<form id="form_input">
+			<label for="name">Имя<span>*</span></label><br>
+			<input type="text" placeholder="Введите имя" name="name" id ="name"><br>
+			
+			<label for="email">Ваша почта<span>*</span></label><br>
+			<input type="email" placeholder="Введите email" name="email" id ="email"><br>
+			
+			<label for="message">Сообщение<span>*</span></label><br>
+			<textarea placeholder="Введите ваше сообщение" name="message" id ="message"></textarea><br>
+			<div id="mess_send" class="btn">Отправить</div>
+		</form>
+	</div>
+	<div id="faq">
+	<div>
+		<span class="title"> ХЗ что вставить</span><br>
+		<span class="heading">вооооооообще хз</span>
+		<p>ffflf dffgkkfkd;k gfkkfkg kgkf kfkf kfkfkgfkgfkg;fkfk f kgf;kg;fkgfkg;f kgfgfkgf  fk;f</p><br>
+	</div>
+	<div>
+		<span class="title"> ХЗ что вставить</span><br>
+		<span class="heading">вооооооообще хз</span>
+		<p>ffflf dffgkkfkd;k gfkkfkg kgkf kfkf kfkfkgfkgfkg;fkfk f kgf;kg;fkgfkg;f kgfgfkgf  fk;f</p><br>
+	
+	</div>
+	<div>
+		<span class="title"> ХЗ что вставить</span><br>
+		<span class="heading">вооооооообще хз</span>
+		<p>ffflf dffgkkfkd;k gfkkfkg kgkf kfkf kfkfkgfkgfkg;fkfk f kgf;kg;fkgfkg;f kgfgfkgf  fk;f</p><br>
+	</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	<script>
+		function slowScroll(id){
+			$('html , body').animate({
+			scrollTop: $(id).offset().top},500);
+		}
+		<!-- проверка на скролл вниз чтобы изменить цвет шапки>
+		$(document).on("scroll", function(){
+			if($(window).scrollTop() === 0)
+				$("header").removeClass("fixed");
+			else
+			$("header").attr("class","fixed");
+		});
+	</script>
+</body>
+</html>
